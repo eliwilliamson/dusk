@@ -2,6 +2,8 @@
 
 A night-time agency.
 
+View it on [gh-pages](http://eliwilliamson.github.io/dusk/public).
+
 ### Setup
 
 - make sure [node.js](http://nodejs.org) and [roots](http://roots.cx) are installed

@@ -7,9 +7,16 @@ html
     meta(name='description', content='description of your site')
     meta(name='author', content= "author of the site")
     title= _path
-    != css()
+    include _styles
 
-  body
+    != css()
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+
+  body#top
     block content
+    include _scripts
 
     != js()
+

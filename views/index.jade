@@ -1,6 +1,373 @@
 extends layout
 
 block content
-  h3 Welcome to roots!
-  :markdown
-    Find tutorials and documentation at http://roots.cx : )
+  header#home
+    nav
+      .container-fluid
+        .row
+          .col-md-8.col-md-offset-2.col-sm-8.col-sm-offset-2.col-xs-8.col-xs-offset-2
+            nav.pull
+              ul.top-nav
+                li
+                  a(href='#intro')
+                    | Introduction
+                    span.indicator
+                      i.fa.fa-angle-right
+                li
+                  a(href='#features')
+                    | Features
+                    span.indicator
+                      i.fa.fa-angle-right
+                li
+                  a(href='#responsive')
+                    | Responsive Design
+                    span.indicator
+                      i.fa.fa-angle-right
+                li
+                  a(href='#portfolio')
+                    | Portfolio
+                    span.indicator
+                      i.fa.fa-angle-right
+                li
+                  a(href='#team')
+                    | Team
+                    span.indicator
+                      i.fa.fa-angle-right
+                li
+                  a(href='#contact')
+                    | Get in Touch
+                    span.indicator
+                      i.fa.fa-angle-right
+    section#hero.hero
+      .container
+        .row
+          .col-md-12.text-right.navicon
+            a#nav-toggle.nav_slide_button(href='#')
+              span
+        .row
+          .col-md-8.col-md-offset-2.text-center.inner
+            h1.animated.fadeInDown
+              | Dusk
+              span 2
+              | Dawn
+            p.animated.fadeInUp.delay-05s
+              | The nightime agency that works while you
+              em  sleep
+              | .
+        .row
+          .col-md-6.col-md-offset-3.text-center
+            a.learn-more-btn(href='http://eliwilliamson.com') Learn More
+  section#intro.intro.text-center.section-padding
+    .container
+      .row
+        .col-md-8.col-md-offset-2.wp1
+          h1.arrow A Creative Portfolio
+          p Sed a lorem quis neque interdum
+            a(href='#')  consequat ut sed sem
+            | . Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent id tempor ipsum. Fusce at massa ac nunc porta fringilla sed eget neque. Quisque quis pretium nulla. Fusce eget bibendum neque, vel volutpat augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+  section#features.features.text-center.section-padding
+    .container
+      .row
+        .col-md-12
+          h1.arrow Love what you do, and you&apos;ll do it well
+          .features-wrapper
+            .col-md-4.wp2
+              .icon
+                i.fa.fa-laptop.shadow
+              h2 Digital Design
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
+                | primis in faucibus.
+            .col-md-4.wp2.delay-05s
+              .icon
+                i.fa.fa-code.shadow
+              h2 Web Development
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
+                | primis in faucibus.
+            .col-md-4.wp2.delay-1s
+              .icon
+                i.fa.fa-heart.shadow
+              h2 Creative Direction
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
+                | primis in faucibus.
+            .clearfix
+  section#responsive.text-center
+    .container-fluid.nopadding.responsive-services
+      .wrapper
+        .iphone
+          .wp3
+        .fluid-white
+      .container.designs
+        .row
+          .col-md-5.col-md-offset-7
+            #servicesSlider
+              ul.slides
+                li
+                  h1.arrow Responsive Design Specialists
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                  p Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.
+                  p Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.
+                li
+                  h1.arrow Bootstrap Professionals
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                  p Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.
+                  p Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.
+  section.swag.text-center
+    .container
+      .row
+        .col-md-8.col-md-offset-2
+          h1 I got 99 Problems
+            span but
+              em design
+              | &apos;aint one
+          a.down-arrow-btn(href='#portfolio')
+            i.fa.fa-chevron-down
+  section#portfolio.portfolio.text-center.section-padding
+    .container
+      .row
+        #portfolioSlider
+          ul.slides
+            li
+              .col-md-4.wp4
+                .overlay-effect.effects.clearfix
+                  .img
+                    img(src='img/portfolio-01.jpg', alt='Portfolio Item')
+                    .overlay
+                      a.expand(href='#')
+                        i.fa.fa-search
+                        br
+                        | View More
+                      a.close-overlay.hidden x
+                h2 Creative Minds
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+              .col-md-4.wp4.delay-05s
+                .overlay-effect.effects.clearfix
+                  .img
+                    img(src='img/portfolio-02.jpg', alt='Portfolio Item')
+                    .overlay
+                      a.expand(href='#')
+                        i.fa.fa-search
+                        br
+                        | View More
+                      a.close-overlay.hidden x
+                h2 Creative Hearts
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+              .col-md-4.wp4.delay-1s
+                .overlay-effect.effects.clearfix
+                  .img
+                    img(src='img/portfolio-03.jpg', alt='Portfolio Item')
+                    .overlay
+                      a.expand(href='#')
+                        i.fa.fa-search
+                        br
+                        | View More
+                      a.close-overlay.hidden x
+                h2 Creative Ideas
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+            li
+              .col-md-4.wp4
+                .overlay-effect.effects.clearfix
+                  .img
+                    img(src='img/portfolio-01.jpg', alt='Portfolio Item')
+                    .overlay
+                      a.expand(href='#')
+                        i.fa.fa-search
+                        br
+                        | View More
+                      a.close-overlay.hidden x
+                h2 Creative Minds
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+              .col-md-4.wp4.delay-05s
+                .overlay-effect.effects.clearfix
+                  .img
+                    img(src='img/portfolio-02.jpg', alt='Portfolio Item')
+                    .overlay
+                      a.expand(href='#')
+                        i.fa.fa-search
+                        br
+                        | View More
+                      a.close-overlay.hidden x
+                h2 Creative Hearts
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+              .col-md-4.wp4.delay-1s
+                .overlay-effect.effects.clearfix
+                  .img
+                    img(src='img/portfolio-03.jpg', alt='Portfolio Item')
+                    .overlay
+                      a.expand(href='#')
+                        i.fa.fa-search
+                        br
+                        | View More
+                      a.close-overlay.hidden x
+                h2 Creative Ideas
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+  .ignite-cta.text-center
+    .container
+      .row
+        .col-md-12
+          a.ignite-btn(href='#') Ignite Your Passion
+  section#team.team.text-center.section-padding
+    .container
+      .row
+        .col-md-12
+          h1.arrow We&apos;re a team that adore what we do
+      .row
+        .team-wrapper
+          #teamSlider
+            ul.slides
+              li
+                .col-md-4.wp5
+                  img(src='img/team-01.png', alt='Team Member')
+                  h2 Jon Snow
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                  .social
+                    ul.social-buttons
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-dribbble
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-twitter
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-envelope
+                .col-md-4.wp5.delay-05s
+                  img(src='img/team-02.png', alt='Team Member')
+                  h2 Cersei Lannister
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                  .social
+                    ul.social-buttons
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-dribbble
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-twitter
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-envelope
+                .col-md-4.wp5.delay-1s
+                  img(src='img/team-03.png', alt='Team Member')
+                  h2 Jamie Lannister
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                  .social
+                    ul.social-buttons
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-dribbble
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-twitter
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-envelope
+              li
+                .col-md-4.wp5
+                  img(src='img/team-01.png', alt='Team Member')
+                  h2 Jon Snow
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                  .social
+                    ul.social-buttons
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-dribbble
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-twitter
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-envelope
+                .col-md-4.wp5.delay-05s
+                  img(src='img/team-02.png', alt='Team Member')
+                  h2 Cersei Lannister
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                  .social
+                    ul.social-buttons
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-dribbble
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-twitter
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-envelope
+                .col-md-4.wp5.delay-1s
+                  img(src='img/team-03.png', alt='Team Member')
+                  h2 Jamie Lannister
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.
+                  .social
+                    ul.social-buttons
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-dribbble
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-twitter
+                      li
+                        a.social-btn(href='#')
+                          i.fa.fa-envelope
+  section.subscribe.text-center
+    .container
+      h1
+        i.fa.fa-paper-plane
+        span Subscribe to stay in the loop
+      form(action='#')
+        input(type='text', name='', value='', placeholder='', required='')
+        input(type='submit', name='', value='Send')
+  section#contact.dark-bg.text-center.section-padding.contact-wrap
+    a.up-btn(href='#top')
+      i.fa.fa-chevron-up
+    .container
+      .row
+        .col-md-12
+          h1.arrow Drop us a line
+      .row.contact-details
+        .col-md-4
+          .light-box.box-hover
+            h2
+              i.fa.fa-map-marker
+              span Hometown
+              p Nashville, TN
+        .col-md-4
+          .light-box.box-hover
+            h2
+              i.fa.fa-mobile
+              span Phone
+              p (513) 504-0921
+        .col-md-4
+          .light-box.box-hover
+            h2
+              i.fa.fa-paper-plane
+              span Email
+              p
+                a(href='#') hello@dusk.com
+      .row
+        .col-md-12
+          ul.social-buttons
+            li
+              a.social-btn(href='#')
+                i.fa.fa-dribbble
+            li
+              a.social-btn(href='#')
+                i.fa.fa-twitter
+            li
+              a.social-btn(href='#')
+                i.fa.fa-envelope
+  footer
+    .container
+      .row
+        .col-md-6
+          ul.legals
+            li
+              a(href='#') Terms &amp; Conditions
+            li
+              a(href='#') Legals
+        .col-md-6.credit
+          p Designed &amp; Developed by
+            a(href='http://eliwilliamson.com')  Eli Williamson
+            |  exclusively for
+            a(href='http://dusk.com')
+              em  Dusk
